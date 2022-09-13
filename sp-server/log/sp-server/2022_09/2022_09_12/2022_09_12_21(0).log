@@ -1,0 +1,39 @@
+2022-09-12 21:32:10.214 WARN  [main] --> : InetAddress.getLocalHost().getHostName() took 5002 milliseconds to respond. Please verify your network configuration (macOS machines may need to add entries to /etc/hosts).
+2022-09-12 21:32:15.220 INFO  [main] --> : Starting SpServerApplication on MacBook-Pro.local with PID 13554 (/Users/hgwxr/code/spring/sa-plus/sp-server/target/classes started by hgwxr in /Users/hgwxr/code/spring/sa-plus/sp-server)
+2022-09-12 21:32:15.220 INFO  [main] --> : The following profiles are active: dev
+2022-09-12 21:32:15.826 INFO  [main] --> : Multiple Spring Data modules found, entering strict repository configuration mode!
+2022-09-12 21:32:15.829 INFO  [main] --> : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2022-09-12 21:32:15.857 INFO  [main] --> : Finished Spring Data repository scanning in 14ms. Found 0 Redis repository interfaces.
+2022-09-12 21:32:16.488 INFO  [main] --> : Tomcat initialized with port(s): 8099 (http)
+2022-09-12 21:32:16.496 INFO  [main] --> : Initializing ProtocolHandler ["http-nio-8099"]
+2022-09-12 21:32:16.497 INFO  [main] --> : Starting service [Tomcat]
+2022-09-12 21:32:16.497 INFO  [main] --> : Starting Servlet engine: [Apache Tomcat/9.0.37]
+2022-09-12 21:32:16.589 INFO  [main] --> : Initializing Spring embedded WebApplicationContext
+2022-09-12 21:32:16.589 INFO  [main] --> : Root WebApplicationContext: initialization completed in 1331 ms
+2022-09-12 21:32:16.783 INFO  [main] --> : Init DruidDataSource
+2022-09-12 21:32:17.092 INFO  [main] --> : {dataSource-1} inited
+2022-09-12 21:32:37.313 INFO  [main] --> : Autowired annotation is not supported on static fields: public static com.fasterxml.jackson.databind.ObjectMapper com.pj.project4sp.SP.objectMapper
+2022-09-12 21:32:38.438 INFO  [main] --> : Initializing ExecutorService 'applicationTaskExecutor'
+2022-09-12 21:32:38.845 INFO  [main] --> : Initializing ExecutorService 'taskScheduler'
+2022-09-12 21:32:38.922 INFO  [main] --> : Starting ProtocolHandler ["http-nio-8099"]
+2022-09-12 21:32:38.955 INFO  [main] --> : Tomcat started on port(s): 8099 (http) with context path ''
+2022-09-12 21:32:38.972 INFO  [main] --> : Started SpServerApplication in 44.063 seconds (JVM running for 49.63)
+2022-09-12 21:32:49.786 INFO  [http-nio-8099-exec-1] --> : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-09-12 21:32:49.787 INFO  [http-nio-8099-exec-1] --> : Initializing Servlet 'dispatcherServlet'
+2022-09-12 21:32:49.797 INFO  [http-nio-8099-exec-1] --> : Completed initialization in 10 ms
+2022-09-12 21:32:55.125 INFO  [http-nio-8099-exec-1] --> : 
+2022-09-12 21:32:55.126 INFO  [http-nio-8099-exec-1] --> : ----------------------------------------------------------------
+2022-09-12 21:32:55.126 INFO  [http-nio-8099-exec-1] --> : IP: 127.0.0.1	r-> /AccAdmin/getLoginInfo	p-> {}
+2022-09-12 21:32:55.170 INFO  [http-nio-8099-exec-1] --> : 本次请求耗时：0.045s, 返回：{"code":401,"msg":"未登录，请登录后再次访问","data":null}
+2022-09-12 21:33:02.586 INFO  [http-nio-8099-exec-2] --> : 
+2022-09-12 21:33:02.589 INFO  [http-nio-8099-exec-2] --> : ----------------------------------------------------------------
+2022-09-12 21:33:02.589 INFO  [http-nio-8099-exec-2] --> : IP: 127.0.0.1	r-> /AccAdmin/doLogin	p-> {"remember":"false","password":"123456","key":"sa"}
+2022-09-12 21:33:03.192 INFO  [http-nio-8099-exec-2] --> : 本次请求耗时：0.606s, 返回：{"code":200,"msg":"ok","data":{"admin":{"id":10001,"name":"sa","avatar":"https://oss.dev33.cn/sa-plus/in-file/avatar1.jpg","password":"********","phone":null,"roleId":1,"status":1,"createByAid":-1,"createTime":"2022-09-12 09:59:05","loginTime":"2022-09-12 13:33:03","loginIp":"127.0.0.1","loginCount":3,"roleName":"开发者"},"appCfg":"{\"logoUrl\":\"http://sa-admin.dev33.cn/sa-frame/admin-logo.png\",\"appName\":\"Sa-Plus 后台管理\",\"appVersionNo\":\"v1.27.0\",\"appVersionLog\":\"更新于2022-2-21\"}","perList":["bas","dev","in-system","console","sql-console","redis-console","apilog-list","form-generator","auth","role-list","menu-list","admin-list","admin-add","sp-admin-login","sp-cfg","sp-cfg-app","sp-cfg-server"],"tokenInfo":{"tokenName":"satoken","tokenValue":"96d9874f-c5c4-4f0e-aa3d-ef1efd43e258","isLogin":true,"loginId":"10001","loginType":"login","tokenTimeout":2592000,"sessionTimeout":2592000,"tokenSessionTimeout":-2,"tokenActivityTimeout":-1,"loginDevice":"default-device","tag":null}}}
+2022-09-12 21:33:05.275 INFO  [http-nio-8099-exec-3] --> : 
+2022-09-12 21:33:05.275 INFO  [http-nio-8099-exec-3] --> : ----------------------------------------------------------------
+2022-09-12 21:33:05.275 INFO  [http-nio-8099-exec-3] --> : IP: 127.0.0.1	r-> /AccAdmin/getLoginInfo	p-> {}
+2022-09-12 21:33:05.298 INFO  [http-nio-8099-exec-3] --> : 本次请求耗时：0.023s, 返回：{"code":200,"msg":"ok","data":{"admin":{"id":10001,"name":"sa","avatar":"https://oss.dev33.cn/sa-plus/in-file/avatar1.jpg","password":"********","phone":null,"roleId":1,"status":1,"createByAid":-1,"createTime":"2022-09-12 09:59:05","loginTime":"2022-09-12 13:33:03","loginIp":"127.0.0.1","loginCount":3,"roleName":"开发者"},"perList":["bas","dev","in-system","console","sql-console","redis-console","apilog-list","form-generator","auth","role-list","menu-list","admin-list","admin-add","sp-admin-login","sp-cfg","sp-cfg-app","sp-cfg-server"],"appCfg":"{\"logoUrl\":\"http://sa-admin.dev33.cn/sa-frame/admin-logo.png\",\"appName\":\"Sa-Plus 后台管理\",\"appVersionNo\":\"v1.27.0\",\"appVersionLog\":\"更新于2022-2-21\"}"}}
+2022-09-12 21:33:07.580 INFO  [http-nio-8099-exec-4] --> : 
+2022-09-12 21:33:07.580 INFO  [http-nio-8099-exec-4] --> : ----------------------------------------------------------------
+2022-09-12 21:33:07.580 INFO  [http-nio-8099-exec-4] --> : IP: 127.0.0.1	r-> /SpCfg/getCfg	p-> {"cfgName":"app_cfg"}
+2022-09-12 21:33:07.605 INFO  [http-nio-8099-exec-4] --> : 本次请求耗时：0.025s, 返回：{"code":200,"msg":"ok","data":"{\"logoUrl\":\"http://sa-admin.dev33.cn/sa-frame/admin-logo.png\",\"appName\":\"Sa-Plus 后台管理\",\"appVersionNo\":\"v1.27.0\",\"appVersionLog\":\"更新于2022-2-21\"}"}
