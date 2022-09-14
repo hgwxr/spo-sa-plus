@@ -1,7 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="97d8d473-9f3e-450c-aded-1035a0fd72fa" name="Default Changelist" comment="" />
+    <list default="true" id="97d8d473-9f3e-450c-aded-1035a0fd72fa" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/static/sa.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/sa.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../sp-server/src/main/resources/application-prod.yml" beforeDir="false" afterPath="$PROJECT_DIR$/../sp-server/src/main/resources/application-prod.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../sp-server/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/../sp-server/src/main/resources/application.yml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -39,6 +43,7 @@
       <updated>1662980070810</updated>
       <workItem from="1662980073728" duration="1359000" />
       <workItem from="1663036424242" duration="1166000" />
+      <workItem from="1663156225054" duration="463000" />
     </task>
     <servers />
   </component>

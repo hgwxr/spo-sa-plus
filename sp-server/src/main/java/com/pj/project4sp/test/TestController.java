@@ -1,5 +1,6 @@
 package com.pj.project4sp.test;
 
+import com.pj.movie.TestKt;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
@@ -20,6 +21,7 @@ public class TestController {
 	@RequestMapping("/test")
 	public AjaxJson test() {
 		System.out.println("------------------ 成功进入请求 ------------------");
+		TestKt.printHello();
 		return AjaxJson.getSuccess("请求成功");
 	}
 

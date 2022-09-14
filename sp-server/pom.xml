@@ -15,13 +15,22 @@
 	<!-- 指定一些属性 -->
 	<properties> 
 		<java.version>1.8</java.version>
-		<maven-jar-plugin.version>3.1.1</maven-jar-plugin.version>
+        <kotlin.version>1.6.21</kotlin.version>
+
+        <maven-jar-plugin.version>3.1.1</maven-jar-plugin.version>
 		<!-- 主类地址，一定要配置，否则打包时运行会出错 -->
 		<java.run.main.class>com.pj.SpServerApplication</java.run.main.class>
 	</properties>
 	
 	<dependencies>
-
+        <dependency>
+            <groupId>org.jetbrains.kotlin</groupId>
+            <artifactId>kotlin-reflect</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>org.jetbrains.kotlin</groupId>
+            <artifactId>kotlin-stdlib-jdk8</artifactId>
+        </dependency>
 		<!-- springboot依赖 -->
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
@@ -146,6 +155,7 @@
             </resource>
 		</resources>
         <plugins>
+
             <!-- 打包jar文件时，配置manifest文件，加入lib包的jar依赖 -->
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
@@ -178,6 +188,26 @@
                         </configuration>
                     </execution>
                 </executions>
+            </plugin>
+
+            <plugin>
+                <groupId>org.jetbrains.kotlin</groupId>
+                <artifactId>kotlin-maven-plugin</artifactId>
+                <configuration>
+                    <args>
+                        <arg>-Xjsr305=strict</arg>
+                    </args>
+                    <compilerPlugins>
+                        <plugin>spring</plugin>
+                    </compilerPlugins>
+                </configuration>
+                <dependencies>
+                    <dependency>
+                        <groupId>org.jetbrains.kotlin</groupId>
+                        <artifactId>kotlin-maven-allopen</artifactId>
+                        <version>${kotlin.version}</version>
+                    </dependency>
+                </dependencies>
             </plugin>
         </plugins>
     </build>
