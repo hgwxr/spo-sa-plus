@@ -292,5 +292,19 @@ public interface PublicMapper {
 			@Param("id") Object id
 			);
 
+	/**
+	 * 获取指定表的全部字段全部数据转化为Map, 根据指定条件(id=id)
+	 * @param tableName 表名子
+	 * @param id id值
+	 * @return
+	 */
+	 List<SoMap> getPageListMapById(
+			@Param("tableName") String tableName,
+			@Param("id") Object id,
+			@Param("action") String action,
+			@Param("desc") String order,
+			@Param("pageSize") int pageSize
+			);
+
 	
 }

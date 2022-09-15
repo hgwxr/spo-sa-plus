@@ -159,6 +159,12 @@
 		where id = #{id} 
 	</select>
 
+	<!-- 获取指定表的全部字段全部数据转化为Map, 根据指定条件(id=id) -->
+	<select id="getPageListMapById" resultType="somap">
+		select * from ${tableName}
+		where  #{id} ${action} id order by id ${desc} limit #{pageSize}
+	</select>
+
 	
 
 </mapper>

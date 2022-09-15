@@ -1,7 +1,7 @@
 package com.pj.movie
 
 import com.pj.utils.LogUtil
-
-fun printHello(){
-    LogUtil.info("hello kotlin")
+@JvmOverloads
+fun printHello(value:Int? = 0){
+    LogUtil.info("hello kotlin $value")
 }
